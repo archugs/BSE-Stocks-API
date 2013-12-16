@@ -100,7 +100,7 @@ class CompanyDailyQuotes:
      + "Face value" + delimiter \
      + "Stock price" + delimiter \
      + "Change" + delimiter \
-     + "Percentage change \n" \
+     + "Percentage change" + delimiter  \
      + "Day's High / Low" + delimiter \
      + "Prev close / open" + delimiter \
      + "Wtd.price avg" + delimiter \

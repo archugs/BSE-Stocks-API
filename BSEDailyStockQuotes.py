@@ -27,13 +27,13 @@ class BSEDailyStockQuotes(BSEStockQuotes):
 			self.stockQuotes[company].print_section5_info()
 
 #Testing
-"""
-lstCompanyCodes = ["500180", "500209"]
-st = BSEDailyStockQuotes(lstCompanyCodes)
-print st.stockQuotes["500180"].face_value
-for code in lstCompanyCodes:
-	print st.stockQuotes[code].company_name
-	print st.stockQuotes[code].stock_price
-st.print_csv_output()
-st.print_txt_output()
-"""
+
+#lstCompanyCodes = ["500180", "500209"]
+#st = BSEDailyStockQuotes(lstCompanyCodes)
+#print st.stockQuotes["500180"].face_value
+#for code in lstCompanyCodes:
+#	print st.stockQuotes[code].company_name
+#	print st.stockQuotes[code].stock_price
+#st.print_csv_output()
+#st.print_txt_output()
+
