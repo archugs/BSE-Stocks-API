@@ -44,18 +44,22 @@ exdate
 	data = BSEDailyStockQuotes(lstCodes)  
   
 To retrieve a specific attribute value:  
+
 	data.stockQuotes["500180"].company_name  
 	data.stockQuotes["500209"].face_value  
   
 or to retrieve all companies values :  
+
 	for code in lstCodes:  
   		print data.stockQuotes[code].company_name  
   		print data.stockQuotes[code].stock_price  
     
 To print output as csv file:  
+
 	data.print_csv_output()  
   
 To print output as text summary report:  
+
 	data.print_txt_output()  
 
 
@@ -87,23 +91,28 @@ closeopen_spread
 	data = BSEArchivedStockQuotes(lstCodes)  
   
 To retrieve a specific attribute value:  
+
 	data.stockQuotes["500180"].company_name  
 	data.stockQuotes["500180"].open_price[0]  
 	data.stockQuotes["500209"].total_turnover[5]  
 
 or to retrieve all archived values over the period  
+
 	for i in range(1, len(data.stockQuotes["500180"].date)):  
 		print data.stockQuotes["500180"].no_of_shares[i]  
 		print data.stockQuotes["500180"].no_of_trades[i]  
   
 or to retrieve all companies values :  
+
 	for code in lstCodes:  
   		for i in range(1, len(data.stockQuotes[code].date)):  
     			print data.stockQuotes[code].day_high[i]  
     			print data.stockQuotes[code].day_low[i]  
     
 To print entire output:  
+
 	data.print_output()   
   
 We can also print the output separated by other delimiters:  
+
 	data.print_output("|")  
