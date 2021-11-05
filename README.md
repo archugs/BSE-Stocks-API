@@ -5,6 +5,15 @@ An API for Indian BSE Stock Quotes
 
 We can retrieve both daily stock quotes as well as archives of stock quotes.
 
+Getting Started:
+-----------------
+To start using this project in your machine, you need to install the basic BSE API.
+For that first do 
+
+`pip install bsedata`
+
+Once BSE Data gets installed on your machine, you can run codes in this, without any error!
+
 Daily Stock Quotes :  
 --------------------  
 **Usage :**  
